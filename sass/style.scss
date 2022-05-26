@@ -369,6 +369,67 @@ h1, h2, h3, h4, h5, h6, figure {
 	background-repeat: no-repeat;
 	position: relative;
 }
+
+
+
+
+
+
+
+@media screen and (max-width: 992px) {
+	.mission-container{
+	  margin-left: 100px;
+	  margin-right: 100px;
+	  padding-top: 50px;
+	}
+  }
+  @media screen and (max-width: 767px) {
+	.mission-container{
+	  margin-left: 0px;
+	  margin-right: 0px;
+	  padding-top: 10px;
+	}
+  }
+  @media screen and (max-width: 356px) {
+	.mission-container{
+	  margin-left: 0px;
+	  margin-right: 0px;
+	  padding-top: 10px;
+	  background-color: #29af9b;
+	}
+  }
+
+  .mission-headers{
+	background-color: #67bc4291 ;
+	border-radius: 10px;
+	margin-bottom: 10px;
+  }
+  
+  .mission-content{
+   color: #505356;
+   padding: 5px;
+   font-size: 18px;
+   min-height: 125px;
+	
+  }
+  .mission-point{
+	padding: 10px;  
+  }
+  
+  .mission-point-inner{
+	border-radius: 20px;
+	padding: 10px;
+	background-color: white;
+  }
+
+
+
+
+
+
+
+
+
 .name-style {
 	border-radius: 5px;
 	padding: 4px;
@@ -577,7 +638,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 
 .fh5co-bg-section{
-	background: rgba($brand-black,.05);
+	background: rgba($brand-black,.08);
 }
 
 #fh5co-explore,
