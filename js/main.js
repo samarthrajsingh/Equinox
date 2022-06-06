@@ -26,13 +26,13 @@
 	var mobileMenuOutsideClick = function() {
 
 		$(document).click(function (e) {
-	    var container = $("#fh5co-offcanvas, .js-fh5co-nav-toggle");
+	    var container = $("#equinox-offcanvas, .js-equinox-nav-toggle");
 	    if (!container.is(e.target) && container.has(e.target).length === 0) {
 
 	    	if ( $('body').hasClass('offcanvas') ) {
 
     			$('body').removeClass('offcanvas');
-    			$('.js-fh5co-nav-toggle').removeClass('active');
+    			$('.js-equinox-nav-toggle').removeClass('active');
 				
 	    	}
 	    
@@ -45,15 +45,15 @@
 
 	var offcanvasMenu = function() {
 
-		$('#page').prepend('<div id="fh5co-offcanvas" />');
-		$('#page').prepend('<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle fh5co-nav-white"><i></i></a>');
+		$('#page').prepend('<div id="equinox-offcanvas" />');
+		$('#page').prepend('<a href="#" class="js-equinox-nav-toggle equinox-nav-toggle equinox-nav-white"><i></i></a>');
 		var clone1 = $('.menu-1 > ul').clone();
-		$('#fh5co-offcanvas').append(clone1);
+		$('#equinox-offcanvas').append(clone1);
 		var clone2 = $('.menu-2 > ul').clone();
-		$('#fh5co-offcanvas').append(clone2);
+		$('#equinox-offcanvas').append(clone2);
 
-		$('#fh5co-offcanvas .has-dropdown').addClass('offcanvas-has-dropdown');
-		$('#fh5co-offcanvas')
+		$('#equinox-offcanvas .has-dropdown').addClass('offcanvas-has-dropdown');
+		$('#equinox-offcanvas')
 			.find('li')
 			.removeClass('has-dropdown');
 
@@ -80,7 +80,7 @@
 			if ( $('body').hasClass('offcanvas') ) {
 
     			$('body').removeClass('offcanvas');
-    			$('.js-fh5co-nav-toggle').removeClass('active');
+    			$('.js-equinox-nav-toggle').removeClass('active');
 				
 	    	}
 		});
@@ -89,7 +89,7 @@
 
 	var burgerMenu = function() {
 
-		$('body').on('click', '.js-fh5co-nav-toggle', function(event){
+		$('body').on('click', '.js-equinox-nav-toggle', function(event){
 			var $this = $(this);
 
 
@@ -194,7 +194,7 @@
 
 	// Loading page
 	var loaderPage = function() {
-		$(".fh5co-loader").fadeOut("slow");
+		$(".equinox-loader").fadeOut("slow");
 	};
 
 	var counter = function() {
@@ -206,8 +206,8 @@
 	};
 
 	var counterWayPoint = function() {
-		if ($('#fh5co-counter').length > 0 ) {
-			$('#fh5co-counter').waypoint( function( direction ) {
+		if ($('#equinox-counter').length > 0 ) {
+			$('#equinox-counter').waypoint( function( direction ) {
 										
 				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
 					setTimeout( counter , 400);					
